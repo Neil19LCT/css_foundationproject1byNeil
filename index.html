@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat-Meow Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">CAT-MEOW CLINIC<span>&#10004;</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">HOME</a></li>
+
+          <li class="dropdown-aboutus">
+            <a href="#">ABOUT US</a>
+              <ul class="dropdown-menu-aboutus">
+                <li><a href="index.html">Our Vision & Mission?</a></li>
+                <li><a href="index.html">Why choose cat only?</a></li>
+                <li><a href="index.html">Our Facility</a></li>
+                <li><a href="index.html">Our Staff</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="index.html">SERVICES</a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Check-Up</a></li>
+                <li><a href="index.html">Urgent Care</a></li>
+                <li><a href="index.html">Laboratory</a></li>
+                <li><a href="index.html">Preventive Care</a></li>
+            </ul>
+          </li>
+
+          <li><a href="index.html">INFORMATION</a></li>
+          <li><a href="index.html">CONTACT US</a></li>
+          <li><a href="index.html">CAREERS</a></li>
+          
+          <li class="search-button">
+            <a href="index.html">
+              <img src="image/search-image2.png" alt="search image" width="40px" height="40px">
+            <a/>
+          </li>
+      </ul>
+
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>"Our staff are all crazy about cats”</h2>
+          <p>
+            "Our cat-meow clinic is designed to be super quiet and calm, with no dogs around. This way, your cat can feel less stressed and recover faster. Many cats even end up enjoying their visit! Come check us out – we’re sure your kitty will appreciate it."
+          </p>
+            <a href="index.html">
+              <button>Book Appointment</button>
+            </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Copyright Cat-Meow Clinic ® 2024 All Rights Reserved. Developed by Neil Patrick Java Veñegas.</p>
+    </footer>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+  </body>
+</html>
